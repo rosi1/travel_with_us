@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Numans&display=swap");
+
+:root {
+  /* --orange: #ffa500; */
+  --turqiz: #09c2c2;
+}
+* {
+  font-family: "Numans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  /* transition: all 0.2s linear; */
+}
+
+*::selection {
+  background: var(--turqiz);
+  color: #fff;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 55.5%;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.heading span {
+  font-size: 3.5rem;
+  background: rgba(94, 82, 62, 0.3);
+  color: var(--turqiz);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+.heading span.space {
+  background: none;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--turqiz);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--turqiz);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.btn:hover {
+  background: #044949;
+  color: var(--turqiz);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background: rgb(77, 77, 77); */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+}
+header .logo span {
+  color: var(--turqiz);
+}
+#logout-btn {
+  background: none;
+  outline: none;
+}
+header .navbar a,
+#logout-btn {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0.8rem;
+}
+header .navbar a:hover,
+#logout-btn:hover {
+  color: var(--turqiz);
+  border-bottom: 2px solid #09c2c2;
+}
+header .icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+header .icons i:hover {
+  color: var(--turqiz);
+}
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  /* display: none; */
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  /* display: block; */
+}
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+}
+header .search-bar-container label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+header .search-bar-container label:hover {
+  color: var(--turqiz);
+}
+
+/********menu bar ********/
+
+#menu-bar {
+  color: var(--turqiz);
+  border: 0.1rem solid #09c2c2;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* login form */
+
+.upper-container {
+  /* background-image: url(../src/img/heart.jpg); */
+  /* background: url(../src/img/heart.jpg); */
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url(./bottle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 50vw;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #09c2c2;
+}
+.login-form-container form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  /* background: rgb(253, 253, 253); */
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  color: #fff;
+}
+.login-form-container form input {
+  font-size: 14px;
+}
+.login-form-container h3 {
+  font-size: 25px;
+  color: rgb(33, 96, 104);
+  padding: 1rem 0;
+}
+
+.login-form-container p {
+  margin-top: 1rem;
+}
+.login-form-container p a {
+  color: var(--turqiz);
+}
+.login-form-container p a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+/* .login-form-container #close-form {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 5rem;
+  color: #fff;
+  cursor: pointer;
+} */
+
+/*Home section*/
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+
+.home .content {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+.home .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+}
+.home .content h3 span {
+  color: var(--turqiz);
+  text-transform: uppercase;
+}
+.home .content p {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.home .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home .controls .vid-btn {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+.home .controls .vid-btn.active {
+  background: #09c2c2;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #menu-bar {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #333;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    background: #222;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 32.5%;
+  }
+  .heading span {
+    font-size: 2.5rem;
+  }
+}

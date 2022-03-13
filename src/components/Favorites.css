@@ -1,0 +1,28 @@
+.fav-container {
+  /* background-image: url(../img/heart.jpg); */
+  background: none;
+  background-repeat: no-repeat;
+  text-align: center;
+  box-sizing: border-box;
+}
+.favorites-header .heading {
+  margin-top: 5rem;
+}
+.favorites-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.favorites {
+  font-size: 12px;
+  margin: 5rem;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+/* .img-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+} */

@@ -1,0 +1,98 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+.container {
+  background-image: url(../img/hotel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.book .heading {
+  /* display: block; */
+  position: relative;
+  top: 10rem;
+}
+
+.book .row form,
+.flight .row form {
+  /* width: 70%; */
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 15rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  align-items: center;
+  gap: 5.5rem;
+  /* justify-content: space-between; */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.book .row form .search h3 {
+  font-size: 1.5rem;
+}
+.book .row form .inputBox h3,
+.flight .row form .inputBox h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #666;
+}
+
+#city-select-label {
+  color: #fff;
+  font-size: 1.7rem;
+}
+#city-select {
+  color: #fff;
+  font-size: 1.7rem;
+}
+/***************dates***************/
+
+#ej2_dropdownlist_0 {
+  border-bottom: 1px solid #09c2c2;
+}
+.dates-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 12px;
+}
+
+.dates-container .react-datepicker-wrapper {
+  /* margin: 12px 0; */
+  /* width: 100%; */
+
+  border-bottom: 1px solid #09c2c2;
+  border-left: 1px solid #09c2c2;
+}
+
+.dates-container .react-datepicker-wrapper input {
+  /* padding: 4px 12px; */
+  margin: 0.5rem 0;
+  /* display: flex;
+  justify-content: space-around; */
+  background: none;
+  color: #fff;
+  width: 80%;
+}
+.react-datepicker__month-container {
+  font-size: 1rem;
+}
+/**********guests************/
+#guest-btn {
+  width: 100%;
+  padding: 5;
+}
+
+@media (max-width: 768px) {
+  .book .row form {
+    flex-direction: column;
+    gap: 5.5rem;
+  }
+  .react-datepicker__month-container {
+    font-size: 1rem;
+  }
+}
